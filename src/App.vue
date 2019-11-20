@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Logo />
+    <div class="page-bg"></div>
   </div>
 </template>
 
@@ -27,8 +28,24 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.page-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background: url("./assets/desk-bg.jpg") no-repeat center center;
   background-size: cover;
+  animation: fadein 2s;
+  z-index: -1;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
