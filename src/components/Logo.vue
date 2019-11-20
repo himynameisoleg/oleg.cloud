@@ -45,10 +45,10 @@ export default {
   animation: fadein 1s;
 }
 .icon2 {
-  animation: fadein 2s;
+  animation: fadein 1.5s;
 }
 .icon3 {
-  animation: fadein 2.5s;
+  animation: fadein 2s;
 }
 .trait {
   margin: 0 0.5em 0 0.5em;
