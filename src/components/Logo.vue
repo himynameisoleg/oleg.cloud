@@ -1,15 +1,18 @@
 <template>
   <div class="Logo">
     <h1>oleg.cloud</h1>
-    <a href="https://www.linkedin.com/in/olegperchyk/" target="_blank">
-      <img src="../assets/icons/linkedin.svg" />
-    </a>
-    <a href="https://github.com/himynameisoleg" target="_blank">
-      <img src="../assets/icons/github.svg" />
-    </a>
-    <a href="https://twitter.com/himynameisoleg" target="_blank">
-      <img src="../assets/icons/twitter.svg" />
-    </a>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/olegperchyk/" target="_blank">
+        <img class="icon1" src="../assets/icons/linkedin.svg" />
+      </a>
+      <a href="https://github.com/himynameisoleg" target="_blank">
+        <img class="icon2" src="../assets/icons/github.svg" />
+      </a>
+      <a href="https://twitter.com/himynameisoleg" target="_blank">
+        <img class="icon3" src="../assets/icons/twitter.svg" />
+      </a>
+    </div>
 
     <p>
       <span class="trait" v-for="trait in traits" :key="trait.id">{{
@@ -35,6 +38,18 @@ export default {
 .Logo {
   margin-top: 15vh;
 }
+.social-icons {
+  height: 24px;
+}
+.icon1 {
+  animation: fadein 1s;
+}
+.icon2 {
+  animation: fadein 2s;
+}
+.icon3 {
+  animation: fadein 2.5s;
+}
 .trait {
   margin: 0 0.5em 0 0.5em;
 }
@@ -44,6 +59,15 @@ img {
     // cursor: pointer;
     opacity: 0.2;
     transition: opacity 0.1s ease;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 </style>
