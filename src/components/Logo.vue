@@ -1,16 +1,39 @@
 <template>
   <div class="Logo">
-    <h1>oleg.cloud</h1>
+    <h1 class="title">oleg.cloud</h1>
 
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/olegperchyk/" target="_blank">
-        <img class="icon1" src="../assets/icons/linkedin.svg" />
+        <img
+          class="icon-fade"
+          src="../assets/icons/linkedin.svg"
+          alt="linkedin"
+          title="LinkedIn"
+        />
       </a>
       <a href="https://github.com/himynameisoleg" target="_blank">
-        <img class="icon2" src="../assets/icons/github.svg" />
+        <img
+          class="icon-fade"
+          src="../assets/icons/github.svg"
+          alt="github"
+          title="GitHub"
+        />
       </a>
       <a href="https://twitter.com/himynameisoleg" target="_blank">
-        <img class="icon3" src="../assets/icons/twitter.svg" />
+        <img
+          class="icon-fade"
+          src="../assets/icons/twitter.svg"
+          alt="twitter"
+          title="Twitter"
+        />
+      </a>
+      <a href="https://himynameisoleg.com" target="_blank">
+        <img
+          class="icon-fade"
+          src="../assets/icons/write.svg"
+          alt="blog"
+          title="himynameisoleg.com"
+        />
       </a>
     </div>
 
@@ -41,14 +64,8 @@ export default {
 .social-icons {
   height: 24px;
 }
-.icon1 {
+.icon-fade {
   animation: fadein 1s;
-}
-.icon2 {
-  animation: fadein 1.5s;
-}
-.icon3 {
-  animation: fadein 2s;
 }
 .trait {
   margin: 0 0.5em 0 0.5em;
