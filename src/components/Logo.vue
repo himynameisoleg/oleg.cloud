@@ -1,6 +1,6 @@
 <template>
     <div class="Logo">
-        <h1>oleg perchyk</h1>
+        <h1>oleg.cloud</h1>
         <a href="https://www.linkedin.com/in/olegperchyk/" target="_blank">
             <img src="../assets/icons/linkedin.svg" />
         </a>
